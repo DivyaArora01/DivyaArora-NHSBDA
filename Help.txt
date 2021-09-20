@@ -1,0 +1,7 @@
+---- Run Test from Command Line -----
+
+Prerequisites : Maven should be installed on system.
+
+Step 1 - Open the command prompt and cd until the project root directory.
+Step 2 - Run the following command in the command prompt: mvn test 
+

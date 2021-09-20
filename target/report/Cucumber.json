@@ -1,0 +1,3968 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 958000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 275000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:01:43.835Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2943000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify if user is below 16 years old, he must get help with NHS Costs",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-if-user-is-below-16-years-old--he-must-get-help-with-nhs-costs",
+        "after": [
+          {
+            "result": {
+              "duration": 659000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter day as \"20\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"20\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_enter_day_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter month as \"05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"05\"",
+                  "offset": 20
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_enter_month_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enter year as \"2010\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2010\"",
+                  "offset": 19
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_enter_year_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "he can view list of all the free benefits he is eligible for.",
+            "match": {
+              "location": "Steps.StepDefinitions.he_can_view_list_of_all_the_free_benefits_he_is_eligible_for()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3181000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:01:49.517Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1241000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Verify user aged 19 and above get help with NHS costs  if he and/or his partner get Universal Credit and their combined take-home pay is less than £935.",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-aged-19-and-above-get-help-with-nhs-costs--if-he-and/or-his-partner-get-universal-credit-and-their-combined-take-home-pay-is-less-than-£935.",
+        "after": [
+          {
+            "result": {
+              "duration": 660000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "25",
+                  "08",
+                  "1987"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user is navigated to next page to select appr",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page_to_select_appr()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user yes for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_yes_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user select yes for- Do you or your partner claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_or_your_partner_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user select yes for - Do you or your partner get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_or_your_partner_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user select yes for - As part of your joint Universal Credit, do you have any of these?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_as_part_of_your_joint_universal_credit_do_you_have_any_of_these()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user select yes for - Did you and your partner have a combined take-home pay of \u0027\"£935\"\u0027 or less in your last Universal Credit period?",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027\"£935\"\u0027",
+                  "offset": 80
+                }
+              ],
+              "location": "Steps.StepDefinitions.userSelectYesForDidYouAndYourPartnerHaveACombinedTakeHomePayOfOrLessInYourLastUniversalCreditPeriod(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 206000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "he can view list of all the free benefits he is eligible for.",
+            "match": {
+              "location": "Steps.StepDefinitions.he_can_view_list_of_all_the_free_benefits_he_is_eligible_for()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2267000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 269000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:01:56.693Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1234000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "Verify user get help with NHS costs if he is 16, 17 or 18 years old and in full-time education.",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-get-help-with-nhs-costs-if-he-is-16--17-or-18-years-old-and-in-full-time-education.",
+        "after": [
+          {
+            "result": {
+              "duration": 626000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user enter the day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_the_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "10",
+                  "09",
+                  "2003"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user click yes for - Are you in full-time education?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_yes_for_are_you_in_full_time_education()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 219000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "he can view list of all the free benefits he is eligible for.",
+            "match": {
+              "location": "Steps.StepDefinitions.he_can_view_list_of_all_the_free_benefits_he_is_eligible_for()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 398000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 264000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:02.066Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1235000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "Verify user aged 19 and above get help with NHS costs if he gets qualifying tax credits and have a household income of £15,276 or less.",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-aged-19-and-above-get-help-with-nhs-costs-if-he-gets-qualifying-tax-credits-and-have-a-household-income-of-£15-276-or-less.",
+        "after": [
+          {
+            "result": {
+              "duration": 659000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "22",
+                  "08",
+                  "1972"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user select No for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 212000000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user select yes for - Do you claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user select No for - Do you get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "user read the given information",
+            "match": {
+              "location": "Steps.StepDefinitions.user_read_the_given_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user select tax credits for - Do you or your partner get any of these benefits?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectTaxCreditsForDoYouOrYourPartnerGetAnyOfTheseBenefits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "User select Working Tax Credit and Child Tax Credit together for - Which type of tax credits do you get?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectWorkingTaxCreditAndChildTaxCreditTogetherForWhichTypeOfTaxCreditsDoYouGet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "User select yes for -Is your household income \"£15,276\" or less?",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"£15,276\"",
+                  "offset": 46
+                }
+              ],
+              "location": "Steps.StepDefinitions.userSelectYesForIsYourHouseholdIncomeOrLess(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 271000000,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 402000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 281000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 214000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:07.037Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1223000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 90,
+        "name": "Verify user aged 19 and above, get help with NHS costs if he gets Income Support",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-aged-19-and-above--get-help-with-nhs-costs-if-he-gets-income-support",
+        "after": [
+          {
+            "result": {
+              "duration": 621000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "2",
+                  "08",
+                  "1963"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user select No for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 215000000,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "user select yes for - Do you claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 218000000,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "user select No for - Do you get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user read the given information",
+            "match": {
+              "location": "Steps.StepDefinitions.user_read_the_given_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user select income support for - Do you or your partner get any of these benefits?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectIncomeSupportForDoYouOrYourPartnerGetAnyOfTheseBenefits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 784000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 287000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:11.504Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1223000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 113,
+        "name": "Verify user aged 19 and above, get help with NHS costs if he get income-related Employment and Support Allowance (ESA)",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-aged-19-and-above--get-help-with-nhs-costs-if-he-get-income-related-employment-and-support-allowance-(esa)",
+        "after": [
+          {
+            "result": {
+              "duration": 647000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "22",
+                  "08",
+                  "1970"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "user select No for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186000000,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "user select yes for - Do you claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "user select No for - Do you get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "user read the given information",
+            "match": {
+              "location": "Steps.StepDefinitions.user_read_the_given_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "user select Employment and Support Allowance (ESA) for - Do you or your partner get any of these benefits?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectEmploymentAndSupportAllowanceESAForDoYouOrYourPartnerGetAnyOfTheseBenefits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "user select Income-related ESA for -Which type of Employment and Support Allowance (ESA) do you get?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectIncomeRelatedESAForWhichTypeOfEmploymentAndSupportAllowanceESADoYouGet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 201000000,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 433000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 264000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:16.551Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1249000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 137,
+        "name": "Verify user aged 19 and above, get help with NHS costs if he get help from local council to pay for his care home",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-aged-19-and-above--get-help-with-nhs-costs-if-he-get-help-from-local-council-to-pay-for-his-care-home",
+        "after": [
+          {
+            "result": {
+              "duration": 681000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 138,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "21",
+                  "08",
+                  "1988"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 141,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 142,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 143,
+            "name": "user select No for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 144,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 145,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "user select yes for - Do you claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "user select No for - Do you get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "user read the given information",
+            "match": {
+              "location": "Steps.StepDefinitions.user_read_the_given_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 194000000,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43000000,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "user select Employment and Support Allowance (ESA) for - Do you or your partner get any of these benefits?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectEmploymentAndSupportAllowanceESAForDoYouOrYourPartnerGetAnyOfTheseBenefits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 156,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 157,
+            "name": "user select Contribution-based ESA for -Which type of Employment and Support Allowance (ESA) do you get?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectContributionBasedESAForWhichTypeOfEmploymentAndSupportAllowanceESADoYouGet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 158,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 159,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 160,
+            "name": "user select yes for - Are you pregnant or have you given birth in the last \"12\" months?",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12\"",
+                  "offset": 75
+                }
+              ],
+              "location": "Steps.StepDefinitions.userSelectYesForAreYouPregnantOrHaveYouGivenBirthInTheLastMonths(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 161,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 162,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 163,
+            "name": "user select yes for - Do you have an injury or illness caused by serving in the armed forces?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectYesForDoYouHaveAnInjuryOrIllnessCausedByServingInTheArmedForces()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 164,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 165,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 166,
+            "name": "user select yes for - Do you have diabetes?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectYesForDoYouHaveDiabetes()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 167,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 168,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 169,
+            "name": "user select yes for - Do you have glaucoma?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectYesForDoYouHaveGlaucoma()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 170,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 171,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 172,
+            "name": "user select yes for - Do you live permanently in a care home?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectYesForDoYouLivePermanentlyInACareHome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 173,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 174,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 175,
+            "name": "user select yes for - Do you get help to pay for your care home from your local council?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectYesForDoYouGetHelpToPayForYourCareHomeFromYourLocalCouncil()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 250000000,
+              "status": "passed"
+            },
+            "line": 176,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "line": 177,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 395000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 268000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:22.647Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1199000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 179,
+        "name": "Verify user aged 19 and above, get help with NHS costs if he get Pension Credit Guarantee Credit",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-aged-19-and-above--get-help-with-nhs-costs-if-he-get-pension-credit-guarantee-credit",
+        "after": [
+          {
+            "result": {
+              "duration": 647000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 180,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "26",
+                  "08",
+                  "1947"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 183,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 184,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 185,
+            "name": "user select No for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187000000,
+              "status": "passed"
+            },
+            "line": 186,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 187,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 188,
+            "name": "user select yes for - Do you claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 189,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 190,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 191,
+            "name": "user select No for - Do you get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 164000000,
+              "status": "passed"
+            },
+            "line": 192,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 193,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 194,
+            "name": "user read the given information",
+            "match": {
+              "location": "Steps.StepDefinitions.user_read_the_given_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 195,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 196,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 197,
+            "name": "user select Pension Credit for - Do you or your partner get any of these benefits?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectPensionCreditForDoYouOrYourPartnerGetAnyOfTheseBenefits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 198,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 199,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 200,
+            "name": "user select Guarantee Credit with Savings Credit for - What type of Pension Credit do you get?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectGuaranteeCreditWithSavingsCreditForWhatTypeOfPensionCreditDoYouGet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 201,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 202,
+            "name": "user see the success message - Based on what you\u0027ve told us, You get help with NHS costs",
+            "match": {
+              "location": "Steps.StepDefinitions.user_see_the_success_message_based_on_what_you_ve_told_us_you_get_help_with_nhs_costs()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1105000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 262000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:27.227Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1272000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 206,
+        "name": "Verify error message if he user select both ESA and JSA for- what benefits he gets.",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-error-message-if-he-user-select-both-esa-and-jsa-for--what-benefits-he-gets.",
+        "after": [
+          {
+            "result": {
+              "duration": 680000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "line": 207,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "02",
+                  "08",
+                  "1983"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204000000,
+              "status": "passed"
+            },
+            "line": 210,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 211,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 212,
+            "name": "user select No for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 213,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 214,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 215,
+            "name": "user select yes for - Do you claim any benefits or tax credits?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_yes_for_do_you_claim_any_benefits_or_tax_credits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 188000000,
+              "status": "passed"
+            },
+            "line": 216,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 217,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 218,
+            "name": "user select No for - Do you get paid Universal Credit?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_no_for_do_you_get_paid_universal_credit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 196000000,
+              "status": "passed"
+            },
+            "line": 219,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 220,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 221,
+            "name": "user read the given information",
+            "match": {
+              "location": "Steps.StepDefinitions.user_read_the_given_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 222,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 223,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235000000,
+              "status": "passed"
+            },
+            "line": 224,
+            "name": "user select All benefits (Tax, Income, ESA, JSA, Pension) for - Do you or your partner get any of these benefits?",
+            "match": {
+              "location": "Steps.StepDefinitions.userSelectAllBenefitsTaxIncomeESAJSAPensionForDoYouOrYourPartnerGetAnyOfTheseBenefits()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220000000,
+              "status": "passed"
+            },
+            "line": 225,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 226,
+            "name": "User gets an error message -ESA and JSA cannot be claimed together. Select which benefit you get or select no.",
+            "match": {
+              "location": "Steps.StepDefinitions.userGetsAnErrorMessageESAAndJSACannotBeClaimedTogetherSelectWhichBenefitYouGetOrSelectNo()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negative_cases"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3509000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 279000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:32.649Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1225000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 235,
+        "name": "Verify user get error message if DOB field is blank or incomplete",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-get-error-message-if-dob-field-is-blank-or-incomplete;|-day-|-month-|-year-|;2",
+        "after": [
+          {
+            "result": {
+              "duration": 642000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 177000000,
+              "status": "passed"
+            },
+            "line": 229,
+            "name": "user enter \"\u003cday\u003e\",\"\u003cmonth\u003e\" and \"\u003cyear\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cday\u003e\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"\u003cmonth\u003e\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"\u003cyear\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "Steps.StepDefinitions.userEnterAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 190000000,
+              "status": "passed"
+            },
+            "line": 230,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 231,
+            "name": "user should get error message - There is a problem Enter your date of Birth",
+            "match": {
+              "location": "Steps.StepDefinitions.user_should_get_error_message_there_is_a_problem_enter_your_date_of_birth()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2210000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 270000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 175000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:38.972Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1208000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 236,
+        "name": "Verify user get error message if DOB field is blank or incomplete",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-get-error-message-if-dob-field-is-blank-or-incomplete;|-day-|-month-|-year-|;3",
+        "after": [
+          {
+            "result": {
+              "duration": 637000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 191000000,
+              "status": "passed"
+            },
+            "line": 229,
+            "name": "user enter \"\u003cday\u003e\",\"\u003cmonth\u003e\" and \"\u003cyear\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cday\u003e\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"\u003cmonth\u003e\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"\u003cyear\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "Steps.StepDefinitions.userEnterAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179000000,
+              "status": "passed"
+            },
+            "line": 230,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28000000,
+              "status": "passed"
+            },
+            "line": 231,
+            "name": "user should get error message - There is a problem Enter your date of Birth",
+            "match": {
+              "location": "Steps.StepDefinitions.user_should_get_error_message_there_is_a_problem_enter_your_date_of_birth()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 404000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 285000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:43.998Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1244000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 237,
+        "name": "Verify user get error message if DOB field is blank or incomplete",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-get-error-message-if-dob-field-is-blank-or-incomplete;|-day-|-month-|-year-|;4",
+        "after": [
+          {
+            "result": {
+              "duration": 661000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 229,
+            "name": "user enter \"\u003cday\u003e\",\"\u003cmonth\u003e\" and \"\u003cyear\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cday\u003e\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"\u003cmonth\u003e\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"\u003cyear\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "Steps.StepDefinitions.userEnterAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "line": 230,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 231,
+            "name": "user should get error message - There is a problem Enter your date of Birth",
+            "match": {
+              "location": "Steps.StepDefinitions.user_should_get_error_message_there_is_a_problem_enter_your_date_of_birth()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2557000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User navigate to URL \"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start\"",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.StepDefinitions.user_navigate_to_url(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_nhs_page_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 271000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Start Now",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_start_now()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user Select the country as Wales",
+            "match": {
+              "location": "Steps.StepDefinitions.user_select_the_country_as_wales()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 197000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA\" page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_what_is_your_date_of_birth_check_what_help_you_could_get_to_pay_for_nhs_costs_nhsbsa_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-20T00:02:47.305Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1230000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 239,
+        "name": "Verify user get error message if he do not select yes or no option.",
+        "description": "",
+        "id": "check-nhs-costs-for-person-from-wales;verify-user-get-error-message-if-he-do-not-select-yes-or-no-option.",
+        "after": [
+          {
+            "result": {
+              "duration": 648000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 240,
+            "name": "user enter day, month and year as",
+            "match": {
+              "location": "Steps.StepDefinitions.user_enter_day_month_and_year_as(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "2",
+                  "08",
+                  "1967"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 243,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 244,
+            "name": "User is navigated to next page.",
+            "match": {
+              "location": "Steps.StepDefinitions.user_is_navigated_to_next_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 245,
+            "name": "user do not select any option for - Do you live with a partner?",
+            "match": {
+              "location": "Steps.StepDefinitions.user_do_not_select_any_option_for_do_you_live_with_a_partner()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "line": 246,
+            "name": "user click on Next Button",
+            "match": {
+              "location": "Steps.StepDefinitions.user_click_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 247,
+            "name": "user shall get error message - There is a problem, Select yes if you live with a partner",
+            "match": {
+              "location": "Steps.StepDefinitions.userShallGetErrorMessageThereIsAProblemSelectYesIfYouLiveWithAPartner()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Check NHS costs for person from Wales",
+    "description": "  As a person from Wales\n  I need to know what help I can get with my NHS costs\n  So that I can get the treatment I need",
+    "id": "check-nhs-costs-for-person-from-wales",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CostChecker.feature",
+    "tags": []
+  }
+]

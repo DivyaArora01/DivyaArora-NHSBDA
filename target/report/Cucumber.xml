@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="69.361">
+<testcase classname="Check NHS costs for person from Wales" name="Verify if user is below 16 years old, he must get help with NHS Costs" time="5.655">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+When user enter day as "20".................................................passed
+And user enter month as "05"................................................passed
+And user enter year as "2010"...............................................passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+And he can view list of all the free benefits he is eligible for............passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user aged 19 and above get help with NHS costs  if he and/or his partner get Universal Credit and their combined take-home pay is less than £935." time="7.168">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+When user enter day, month and year as......................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to next page to select appr..........................passed
+When user yes for - Do you live with a partner?.............................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for- Do you or your partner claim any benefits or tax credits?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you or your partner get paid Universal Credit?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - As part of your joint Universal Credit, do you have any of these?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Did you and your partner have a combined take-home pay of '"£935"' or less in your last Universal Credit period?.passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+And he can view list of all the free benefits he is eligible for............passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user get help with NHS costs if he is 16, 17 or 18 years old and in full-time education." time="5.359">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+When user enter the day, month and year as..................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user click yes for - Are you in full-time education?...................passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+And he can view list of all the free benefits he is eligible for............passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user aged 19 and above get help with NHS costs if he gets qualifying tax credits and have a household income of £15,276 or less." time="4.957">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you live with a partner?.......................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you claim any benefits or tax credits?........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you get paid Universal Credit?.................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user read the given information........................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select tax credits for - Do you or your partner get any of these benefits?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When User select Working Tax Credit and Child Tax Credit together for - Which type of tax credits do you get?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When User select yes for -Is your household income "£15,276" or less?.......passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user aged 19 and above, get help with NHS costs if he gets Income Support" time="4.458">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you live with a partner?.......................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you claim any benefits or tax credits?........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you get paid Universal Credit?.................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user read the given information........................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select income support for - Do you or your partner get any of these benefits?.passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user aged 19 and above, get help with NHS costs if he get income-related Employment and Support Allowance (ESA)" time="5.042">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you live with a partner?.......................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you claim any benefits or tax credits?........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you get paid Universal Credit?.................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user read the given information........................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select Employment and Support Allowance (ESA) for - Do you or your partner get any of these benefits?.passed
+And user click on Next Button...............................................passed
+When user select Income-related ESA for -Which type of Employment and Support Allowance (ESA) do you get?.passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user aged 19 and above, get help with NHS costs if he get help from local council to pay for his care home" time="6.09">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you live with a partner?.......................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you claim any benefits or tax credits?........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you get paid Universal Credit?.................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user read the given information........................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select Employment and Support Allowance (ESA) for - Do you or your partner get any of these benefits?.passed
+And user click on Next Button...............................................passed
+When user select Contribution-based ESA for -Which type of Employment and Support Allowance (ESA) do you get?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Are you pregnant or have you given birth in the last "12" months?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you have an injury or illness caused by serving in the armed forces?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you have diabetes?............................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you have glaucoma?............................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you live permanently in a care home?..........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you get help to pay for your care home from your local council?.passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user aged 19 and above, get help with NHS costs if he get Pension Credit Guarantee Credit" time="4.573">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you live with a partner?.......................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you claim any benefits or tax credits?........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you get paid Universal Credit?.................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user read the given information........................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select Pension Credit for - Do you or your partner get any of these benefits?.passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select Guarantee Credit with Savings Credit for - What type of Pension Credit do you get?.passed
+And user click on Next Button...............................................passed
+Then user see the success message - Based on what you've told us, You get help with NHS costs.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify error message if he user select both ESA and JSA for- what benefits he gets." time="5.417">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you live with a partner?.......................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select yes for - Do you claim any benefits or tax credits?........passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select No for - Do you get paid Universal Credit?.................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user read the given information........................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user select All benefits (Tax, Income, ESA, JSA, Pension) for - Do you or your partner get any of these benefits?.passed
+And user click on Next Button...............................................passed
+Then User gets an error message -ESA and JSA cannot be claimed together. Select which benefit you get or select no..passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user get error message if DOB field is blank or incomplete" time="6.314">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter "<day>","<month>" and "<year>".............................passed
+And user click on Next Button...............................................passed
+Then user should get error message - There is a problem Enter your date of Birth.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user get error message if DOB field is blank or incomplete 2" time="5.019">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter "<day>","<month>" and "<year>".............................passed
+And user click on Next Button...............................................passed
+Then user should get error message - There is a problem Enter your date of Birth.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user get error message if DOB field is blank or incomplete 3" time="3.3">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter "<day>","<month>" and "<year>".............................passed
+And user click on Next Button...............................................passed
+Then user should get error message - There is a problem Enter your date of Birth.passed
+]]></system-out>
+</testcase>
+<testcase classname="Check NHS costs for person from Wales" name="Verify user get error message if he do not select yes or no option." time="5.606">
+<system-out><![CDATA[Given User navigate to URL "https://services.nhsbsa.nhs.uk/check-for-help-paying-nhs-costs/start".passed
+Then user is navigated to NHS page -Check what help you could get to pay for NHS costs - NHSBSA.passed
+When User click on Start Now................................................passed
+And user Select the country as Wales........................................passed
+And user click on Next Button...............................................passed
+Then user is navigated to What is your date of birth? -Check what help you could get to pay for NHS costs - NHSBSA" page..passed
+Given user enter day, month and year as.....................................passed
+And user click on Next Button...............................................passed
+Then User is navigated to next page.........................................passed
+When user do not select any option for - Do you live with a partner?........passed
+And user click on Next Button...............................................passed
+Then user shall get error message - There is a problem, Select yes if you live with a partner.passed
+]]></system-out>
+</testcase>
+</testsuite>
